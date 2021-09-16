@@ -156,6 +156,11 @@ body
   text-shadow: 2px 2px 2px red;
 }
 
+.input-name::-webkit-inner-spin-button
+{
+  -webkit-appearance: none;
+}
+
 .button-name
 {
   width: 150px;
