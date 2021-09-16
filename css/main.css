@@ -1,0 +1,244 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: 'Karantina', cursive;
+  background-color: #0E6251 ;
+  overflow: hidden;
+}
+
+.elips
+{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 100px;
+  left: 350px;
+  background-color: rgb(0, 209, 192);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.elips_1
+{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(25, 133, 155);
+  border: 2px solid rgb(0, 38, 255);
+  box-shadow: 0px 0px 50px rgb(1, 125, 242);
+  animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-360deg);
+  }
+}
+
+.elips_2
+{
+  position: absolute;
+  top: 100px;
+  right: 500px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(11, 180, 192);
+  animation: rotate 1s linear infinite;
+}
+
+.elips1
+{
+  width: 400px;
+  height: 400px;
+  background-color: #117864;
+  border-radius: 50%;
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  box-shadow: 0px 0px 10px rgb(9, 199, 233);
+  animation: name 10s linear infinite alternate;
+  border: 1px solid rgb(0, 224, 240);
+}
+
+.elips2
+{
+  width: 800px;
+  height: 800px;
+  background-color: #117864;
+  border-radius: 50%;
+  position: absolute;
+  right: -400px;
+  bottom: -400px;
+  box-shadow: 0px 0px 10px rgb(9, 199, 233);
+  transform: rotate(45deg);
+  animation: name 10s linear infinite alternate;
+  border: 1px solid rgb(0, 224, 240);
+}
+
+@keyframes name {
+  0%{
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+  }
+  20%{
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+  }
+  40%{
+    box-shadow: 0px 0px 70px rgb(0, 0, 0);
+  }
+  60%{
+    box-shadow: 0px 0px 90px rgb(0, 0, 0);
+  }
+  80%{
+    box-shadow: 0px 0px 110px rgb(0, 0, 0);
+  }
+  100%{
+    box-shadow: 0px 0px 130px rgb(0, 0, 0);
+  }
+  
+}
+
+.container
+{
+  max-width: 1200px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-name
+{
+  max-width:400px;
+  height: 500px;
+  background-color: rgba(0, 50, 70, 0.589);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding-top: 60px;
+  border: 1px solid #11ff33;
+  position: relative;
+  z-index: 4;
+}
+
+.input-name
+{
+  width: 300px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(112, 106, 22);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 2px solid rgb(21, 255, 0);
+  outline: none;
+  border-radius: 5px;
+  padding-left: 5px;
+  background-color: rgba(85, 99, 53, 0.329);
+  text-shadow: 2px 2px 2px red;
+}
+
+.button-name
+{
+  width: 150px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid rgb(115, 255, 0);
+  background-color: rgb(7, 32, 26);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  display: block;
+  cursor: pointer;
+  font-size: 18px;
+  color: #11ff33;
+  text-shadow: 2px 2px 2px red;
+}
+
+.form-result
+{
+  font-size: 50px;
+  margin-top: 50px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.267);
+  color: rgb(34, 0, 255);
+  text-shadow: 2px 2px 2px rgb(209, 106, 87);
+}
+
+/* ======================================= */
+
+@media (max-width:1200px){
+  .elips2
+  {
+    display: none;
+  }
+
+  body{
+    overflow: auto;
+  }
+}
+
+@media (max-width:550px){
+  .elips
+  {
+   left: 50px;
+   top: 300px;
+  }
+}
+
+@media (max-width:360px){
+  .form-name
+  {
+    height: 300px;
+  }
+
+  .input-name, .form-result
+  {
+    width: 200px;
+  }
+
+  .elips
+  {
+    width: 150px;
+    height: 150px;
+    left: 20px;
+  }
+
+  .elips1
+  {
+    width: 200px;
+    height: 200px;
+  }
+
+  .elips_2
+  {
+    right: 10px;
+  }
+
+  .elips_1
+  {
+    width: 80px;
+    height: 80px;
+  }
+}
